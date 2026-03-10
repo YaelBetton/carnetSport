@@ -18,10 +18,7 @@ export default function HomeScreen() {
       </View>
 
       {/* Séance du jour */}
-      <TouchableOpacity
-        className="bg-lightDark w-full min-h-[200px] rounded-3xl p-6 shadow-lg border-grey/20 border"
-        activeOpacity={0.8}
-      >
+      <View className="bg-lightDark w-full min-h-[200px] rounded-3xl p-6 shadow-lg border-grey/20 border">
         {/* Première ligne : header + icône */}
         <View className="flex-row items-center justify-between mb-4">
           <View>
@@ -64,7 +61,7 @@ export default function HomeScreen() {
             LANCER LA SÉANCE
           </Text>
         </TouchableOpacity>
-      </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 }
